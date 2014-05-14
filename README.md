@@ -1,18 +1,19 @@
-/* 
+# Hello. This is the Polo Ui Free Kit.
 
-Enjoy responsibly!
-@Loc_rabbirt
+UI Kit HTML-CSS.
 
-*/
-/*
- * UI Kit By Me
- *
- * Coding by Loc_rabbirt
- * 
- * Not resell anywhere
- * 
- */
+Coding by Loc_rabbirt.
 
-/* ==========================================================================
-   Contact: @Loc_rabbirt in Twitter
-   ========================================================================== */
+Not resell anywhere.
+
+#### Where do I get the source code?
+Check the GitHub repo here: https://github.com/tienloc1/polouikit
+
+#### I want to contribute 
+Contact me on [Twitter](@Loc_rabbirt) 
+
+#### Thanks to
+[Karlo Chorgolashvili](https://www.behance.net/gallery/14462261/Free-Flat-UI) - sharing PSD UI.
+
+#### License
+MIT License - fork, modify and use however you want.
