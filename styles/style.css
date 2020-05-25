@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -22,16 +22,18 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	outline-style: none;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	background: url(../images/bg.jpg) repeat top left transparent;
 	line-height: 1;
-	font-family: 'Open Sans';
+	font-family: 'Open Sans' !important;
 }
 ol, ul {
 	list-style: none;
@@ -80,7 +82,9 @@ AREA
 #search-box,
 #form-area,
 #login-area,
-#navigation-area {
+#navigation-area,
+#info-area,
+#product-area {
 	width: 100%;
 	margin: 0 auto 80px;
 	text-align: center;
@@ -216,6 +220,173 @@ a.red:hover {
 }
 
 /******************************
+BUTTON BORDER
+*******************************/
+.button-border {
+    position: relative;
+    margin: 2px;
+    border-radius: 0;
+    transition: all .25s ease-in-out;
+}
+
+/******************************
+BUTTON BORDER GREEN
+*******************************/
+
+.button-border.green {
+	background: #8cc152;
+	border: 2px solid #8cc152;
+	box-shadow: none;
+}
+
+.button-border.green:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #fff;
+}
+
+.button-border.green:hover {
+    opacity: 1;
+    background: #81c338;
+    box-shadow: none;
+}
+
+/******************************
+BUTTON BORDER ORANGE
+*******************************/
+
+.button-border.orange {
+	background: #fc6e51;
+	border: 2px solid #fc6e51;
+	box-shadow: none;
+}
+
+.button-border.orange:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #fff;
+}
+
+.button-border.orange:hover {
+    opacity: 1;
+    background: #d4482b;
+    box-shadow: none;
+}
+
+/******************************
+BUTTON BORDER YELLOW
+*******************************/
+
+.button-border.yellow {
+	background: #ffce54;
+	border: 2px solid #ffce54;
+	box-shadow: none;
+}
+
+.button-border.yellow:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #fff;
+}
+
+.button-border.yellow:hover {
+    opacity: 1;
+    background: #fbc234;
+    box-shadow: none;
+}
+
+/******************************
+BUTTON BORDER MINT
+*******************************/
+
+.button-border.mint {
+	background: #48cfad;
+	border: 2px solid #48cfad;
+	box-shadow: none;
+}
+
+.button-border.mint:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #fff;
+}
+
+.button-border.mint:hover {
+    opacity: 1;
+    background: #2cd2a8;
+    box-shadow: none;
+}
+
+/******************************
+BUTTON BORDER BLUE
+*******************************/
+
+.button-border.blue {
+	background: #29b5e6;
+	border: 2px solid #29b5e6;
+	box-shadow: none;
+}
+
+.button-border.blue:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #fff;
+}
+
+.button-border.blue:hover {
+    opacity: 1;
+    background: #29b5e6;
+    box-shadow: none;
+}
+
+/******************************
+BUTTON BORDER RED
+*******************************/
+
+.button-border.red {
+	background: #ea434b;
+	border: 2px solid #ea434b;
+	box-shadow: none;
+}
+
+.button-border.red:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #fff;
+}
+
+.button-border.red:hover {
+    opacity: 1;
+    background: #ea2831;
+    box-shadow: none;
+}
+
+
+/******************************
 RATING
 *******************************/
 
@@ -270,7 +441,7 @@ SOCIAL
     padding-right: 20px;
 }
 
-#social-area ul li a i {
+ul li a i {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -284,71 +455,71 @@ SOCIAL
 
 /*Social No Shadow*/
 
-#social-area ul li.social-fb a i {
+ul li.social-fb a i {
 	padding: 14px 24px;
 }
 
-#social-area ul li.social-fb a i {
+ul li.social-fb a i {
 	background-color: #3b5999;
 }
 
-#social-area ul li.social-fb a i:hover {
+ul li.social-fb a i:hover {
 	color: #3b5999;
 }
 
 /* End Facebook Social */
 
-#social-area ul li.social-dri a i {
+ul li.social-dri a i {
 	background-color: #ec87c0;
 }
 
-#social-area ul li.social-dri a i:hover {
+ul li.social-dri a i:hover {
 	color: #ec87c0;
 }
 
 /* End Dribbble Social */
 
-#social-area ul li.social-tw a i {
+ul li.social-tw a i {
 	background-color: #55acee;
 }
 
-#social-area ul li.social-tw a i:hover {
+ul li.social-tw a i:hover {
 	color: #55acee;
 }
 
 /* End Twitter Social */
 
-#social-area ul li.social-gpl a i {
+ul li.social-gpl a i {
 	background-color: #fc6e51;
 }
 
-#social-area ul li.social-gpl a i:hover {
+ul li.social-gpl a i:hover {
 	color: #fc6e51;
 }
 
 /* End Google Plus */
 
-#social-area ul li.social-fb a i:hover,
-#social-area ul li.social-dri a i:hover,
-#social-area ul li.social-tw a i:hover,
-#social-area ul li.social-gpl a i:hover {
+ul li.social-fb a i:hover,
+ul li.social-dri a i:hover,
+ul li.social-tw a i:hover,
+ul li.social-gpl a i:hover {
 	background-color: #fff;
 }
 
 /*Social Shadow*/
 
-#social-area ul li.shadow-social-fb a i {
+ul li.shadow-social-fb a i {
 	padding: 14px 24px;
 }
 
-#social-area ul li.shadow-social-fb a i {
+ul li.shadow-social-fb a i {
 	background-color: #3b5999;
 	-webkit-box-shadow: 0 2px 0 #2f4a7f;
 	-moz-box-shadow: 0 2px 0 #2f4a7f;
 	box-shadow: 0 2px 0 #2f4a7f;
 }
 
-#social-area ul li.shadow-social-fb a i:hover {
+ul li.shadow-social-fb a i:hover {
 	-webkit-box-shadow: 0 -2px 0 #2f4a7f;
 	-moz-box-shadow: 0 -2px 0 #2f4a7f;
 	box-shadow: 0 -2px 0 #2f4a7f;
@@ -356,14 +527,14 @@ SOCIAL
 
 /* End Facebook Social */
 
-#social-area ul li.shadow-social-dri a i {
+ul li.shadow-social-dri a i {
 	background-color: #ec87c0;
 	-webkit-box-shadow: 0 2px 0 #cf74a9;
 	-moz-box-shadow: 0 2px 0 #cf74a9;
 	box-shadow: 0 2px 0 #cf74a9;
 }
 
-#social-area ul li.shadow-social-dri a i:hover {
+ul li.shadow-social-dri a i:hover {
 	-webkit-box-shadow: 0 -2px 0 #cf74a9;
 	-moz-box-shadow: 0 -2px 0 #cf74a9;
 	box-shadow: 0 -2px 0 #cf74a9;
@@ -371,14 +542,14 @@ SOCIAL
 
 /* End Dribbble Social */
 
-#social-area ul li.shadow-social-tw a i {
+ul li.shadow-social-tw a i {
 	background-color: #55acee;
 	-webkit-box-shadow: 0 2px 0 #4d98cf;
 	-moz-box-shadow: 0 2px 0 #4d98cf;
 	box-shadow: 0 2px 0 #4d98cf;
 }
 
-#social-area ul li.shadow-social-tw a i:hover {
+ul li.shadow-social-tw a i:hover {
 	-webkit-box-shadow: 0 -2px 0 #4d98cf;
 	-moz-box-shadow: 0 -2px 0 #4d98cf;
 	box-shadow: 0 -2px 0 #4d98cf;
@@ -386,14 +557,14 @@ SOCIAL
 
 /* End Twitter Social */
 
-#social-area ul li.shadow-social-gpl a i {
+ul li.shadow-social-gpl a i {
 	background-color: #fc6e51;
 	-webkit-box-shadow: 0 2px 0 #df5e45;
 	-moz-box-shadow: 0 2px 0 #df5e45;
 	box-shadow: 0 2px 0 #df5e45;
 }
 
-#social-area ul li.shadow-social-gpl a i:hover {
+ul li.shadow-social-gpl a i:hover {
 	-webkit-box-shadow: 0 -2px 0 #df5e45;
 	-moz-box-shadow: 0 -2px 0 #df5e45;
 	box-shadow: 0 -2px 0 #df5e45;
@@ -422,7 +593,7 @@ PROGRESS BAR
   line-height: 20px;
   color: #fff;
   text-align: center;
-  background-color: #428bca; 
+  background-color: #428bca;
   -webkit-transition: width 1.5s ease-in-out;
   transition: width 1.5s ease-in-out;
 }
@@ -485,7 +656,7 @@ SEARCH BOX
 	font-weight: 100;
 	width:400px;
 	border: 0;
-	
+
 	border-radius: 4px;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
@@ -515,7 +686,7 @@ SEARCH BOX
 	width:80px;
 	border: 0;
 	cursor:pointer;
-	
+
 	border-radius: 4px;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
@@ -542,7 +713,7 @@ FORM
 	font-weight: 100;
 	width:400px;
 	border: 0;
-	
+
 	border-radius: 4px;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
@@ -589,7 +760,7 @@ FORM
 
 #login-area ul #signup,
 #login-area ul #forgot {
-	float: left;	
+	float: left;
 	margin-top: 10px;
 }
 
@@ -624,7 +795,7 @@ FORM
 	padding: 15px 10px;
 }
 
-#form input[type=password] {	
+#form input[type=password] {
 	-webkit-border-radius: 0 0 4px 4px;
 	-moz-border-radius: 0 0 4px 4px;
 	-o-border-radius: 0 0 4px 4px;
@@ -666,7 +837,7 @@ form #submit:hover:active{
 	box-shadow: 0 0 0 #343434;
 }
 
-/*#form input:focus:invalid {	
+/*#form input:focus:invalid {
 	-moz-box-shadow: 0 0 2px #f44444;
 	-webkit-box-shadow: 0 0 2px #f44444;
 	box-shadow: 0 0 2px #f44444;
@@ -685,6 +856,7 @@ Navigation
 #navigation-area {
 	height: 400px;
 	overflow: hidden;
+	margin-bottom: 40px;
 }
 
 nav {
@@ -760,7 +932,7 @@ nav {
 	content: '';
 	position: absolute;
 	border-style: solid;
-	border-width: 0 10px 10px;
+	border-width: 0 9px 10px;
 	border-color: #FFFFFF transparent;
 	display: block;
 	width: 0;
@@ -810,3 +982,141 @@ nav {
 	-o-border-radius: 0 5px 5px 0;
 	border-radius: 0 5px 5px 0;
 }
+
+/******************************
+Info
+*******************************/
+
+.info-box {
+	width: 250px;
+	background-color: #fff;
+	margin: 0 auto;
+	line-height:
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.info-box img {
+	padding: 20px 0;
+}
+
+.detail p {
+	padding: 15px;
+	font-size: 12px;
+	line-height: 18px;
+	color: #bfbfbf;
+}
+
+.detail .name,
+.detail .job {
+	padding: 0;
+	font-size: 18px;
+	line-height: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #4e4e4e;
+}
+
+.detail .job {
+	font-size: 13px;
+	color: #afafaf;
+}
+
+.social-info {
+	padding-bottom: 30px;
+	margin: 0 auto;
+}
+
+.social-info p {
+	color: #afafaf;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+}
+
+.social-info ul li {
+    display: inline-block;
+    padding: 0 4px;
+}
+
+.social-info ul li a i {
+	padding: 14px 16px;
+}
+
+.social-info ul li.social-fb a i {
+	padding: 14px 20px;
+}
+
+/******************************
+Product
+*******************************/
+
+.product-box {
+	width: 250px;
+	background-color: #fff;
+	margin: 0 auto;
+	line-height:
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.product-box img {
+	padding: 20px 0;
+}
+
+.product-content p {
+	padding: 15px;
+	font-size: 12px;
+	line-height: 18px;
+	color: #bfbfbf;
+
+}
+
+.product-content .product-title {
+	background-color: #ffce54;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.product-content .product-title .price {
+	padding: 0 0 0 45px;
+	color: #f44444;
+}
+
+.product-button {
+	font-size: 15px;
+	font-weight: bold;
+	background-color: #dadada;
+	color: #fff;
+	padding: 18px;
+
+	-webkit-text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+	-moz-text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+	-o-text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+	text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+
+	-webkit-box-shadow: 0 2px 0 #a09f9f;
+	-moz-box-shadow: 0 2px 0 #a09f9f;
+	-o-box-shadow: 0 2px 0 #a09f9f;
+	box-shadow: 0 2px 0 #a09f9f;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+

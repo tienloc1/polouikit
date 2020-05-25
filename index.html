@@ -14,12 +14,25 @@
         <link rel="stylesheet" type="text/css" href="styles/style.css" />
         <link rel="stylesheet" type="text/css" href="styles/jquery.rating.css" />
         <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-            
+
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <!-- endbuild -->
     </head>
     <body>
-    
+    <div class="wrapper-2">
+            <h1>Update 2020</h1>
+
+
+        <div id="button-area" class="clearfix">
+            <a href="#" class="button button-border green"><span>Green</span></a>
+            <a href="#" class="button button-border orange"><span>Orange</span></a>
+            <a href="#" class="button button-border yellow"><span>Yellow</span></a>
+            <a href="#" class="button button-border mint"><span>Mint</span></a>
+            <a href="#" class="button button-border blue"><span>Blue</span></a>
+            <a href="#" class="button button-border red"><span>Red</span></a>
+        </div><!-- #button-area -->
+    </div>
+
     <div class="wrapper">
 
         <div id="button-area" class="clearfix">
@@ -30,9 +43,9 @@
             <a href="#" class="button blue"><span>Blue</span></a>
             <a href="#" class="button red"><span>Red</span></a>
         </div><!-- #button-area -->
-        
+
         <div id="rating-area">
-            <div class="star-area">                
+            <div class="star-area">
                 <input class="star {split:2} auto-submit-star" type="radio" name="test-4-rating-4" value="1" title="Very Poor" />
                 <input class="star {split:2} auto-submit-star" type="radio" name="test-4-rating-4" value="2" title="Poor" />
                 <input class="star {split:2} auto-submit-star" type="radio" name="test-4-rating-4" value="3" title="Very Bad" />
@@ -83,7 +96,7 @@
             <div class="search-bg">
                 <ul>
                     <input class="search-text" title="What are You looking For ?" required type="text" placeholder="What are You looking For ?">
-                    <input class="search-submit" type="submit" value="Search" name="posted">   
+                    <input class="search-submit" type="submit" value="Search" name="posted">
                 </ul>
             </div>
         </div><!-- #search-box -->
@@ -102,7 +115,7 @@
         <div id="login-area">
             <ul>
                 <li>
-                    <form id="form" action="post">        
+                    <form id="form" action="post">
                         <input type="text" class="hide" id="username" name="username" value="" title="Username" required aria-required="true" pattern="\S{5,}" placeholder="Username">
                         <br>
                         <input class="hide" type="password" id="password" name="password" value="" title="Password" required aria-required="true" pattern="\S{7,}" placeholder="Password">
@@ -115,7 +128,7 @@
                 <li id="forgot"><a href="#">• Forgot Password ?</a></li>
             </ul>
         </div><!-- #login-area -->
-        
+
 
         <div id="navigation-area">
             <nav>
@@ -153,10 +166,47 @@
             </nav>
         </div><!-- #navigation-area -->
 
+        <div id="info-area">
+            <div class="info-box">
+
+                <img src="images/image-info.png" alt="avatar" />
+
+                <div class="detail">
+                    <p class="name"><span>Join Smith</span></p>
+                    <p class="job"><span>Web Designer</span></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, hic adipisci quos ad quasi natus odio.</p>
+                </div>
+
+                <div class="social-info">
+                    <p>Follow Me</p>
+                    <ul>
+                        <li class="social-fb info-social"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="social-dri info-social"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li class="social-tw info-social"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="social-gpl info-social"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+
+            </div><!-- .info-box -->
+        </div><!-- #info-area -->
+
+        <div id="product-area">
+            <div class="product-box">
+
+                <img src="images/product.jpg" alt="product image" />
+
+                <div class="product-content">
+                    <p class="product-title">iPhone 5S Gold <span class="price">$1200</span></p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                    <div class="product-button">ADD TO CART</div>
+                </div>
+
+            </div>
+        </div><!-- #product-area -->
 
 
     </div><!-- .wrapper -->
-    
+
 
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -199,10 +249,10 @@
            // 'value' is the value selected
            // 'element' points to the link element that received the click.
            alert("The value selected was '" + value + "'\n\nWith this callback function I can automatically submit the form with this code:\nthis.form.submit();");
-           
+
            // To submit the form automatically:
            //this.form.submit();
-           
+
            // To submit the form via ajax:
            //$(this.form).ajaxSubmit();
           }
