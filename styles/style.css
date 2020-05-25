@@ -90,7 +90,24 @@ AREA
 	text-align: center;
 }
 
+/******************************
+WRAPPER 2
+*******************************/
+.wrapper-2 {
+    width: 1180px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 90px 0 40px;
+}
 
+.wrapper-2 h1 {
+    text-align: center;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: -1px;
+}
 
 /******************************
 BUTTON
@@ -251,7 +268,7 @@ BUTTON BORDER GREEN
 
 .button-border.green:hover {
     opacity: 1;
-    background: #81c338;
+    background: #76ab3c;
     box-shadow: none;
 }
 
@@ -303,7 +320,7 @@ BUTTON BORDER YELLOW
 
 .button-border.yellow:hover {
     opacity: 1;
-    background: #fbc234;
+    background: #cca33e;
     box-shadow: none;
 }
 
@@ -329,7 +346,7 @@ BUTTON BORDER MINT
 
 .button-border.mint:hover {
     opacity: 1;
-    background: #2cd2a8;
+    background: #33b393;
     box-shadow: none;
 }
 
@@ -355,7 +372,7 @@ BUTTON BORDER BLUE
 
 .button-border.blue:hover {
     opacity: 1;
-    background: #29b5e6;
+    background: #46a1c1;
     box-shadow: none;
 }
 
@@ -381,7 +398,7 @@ BUTTON BORDER RED
 
 .button-border.red:hover {
     opacity: 1;
-    background: #ea2831;
+    background: #bd333a;
     box-shadow: none;
 }
 
