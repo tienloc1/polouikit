@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -25,7 +25,7 @@ time, mark, audio, video {
 	outline-style: none;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -218,6 +218,173 @@ a.red:hover {
 	-moz-box-shadow: 0px -2px 0px #b93b41;
 	box-shadow: 0px -2px 0px #b93b41;
 }
+
+/******************************
+BUTTON BORDER
+*******************************/
+.button-border {
+    position: relative;
+    margin: 2px;
+    border-radius: 0;
+    transition: all .25s ease-in-out;
+}
+
+/******************************
+BUTTON BORDER GREEN
+*******************************/
+
+.button-border.green {
+	background: #8cc152;
+	border: 2px solid #8cc152;
+	box-shadow: none;
+}
+
+.button-border.green:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #fff;
+}
+
+.button-border.green:hover {
+    opacity: 1;
+    background: #6d9640;
+    box-shadow: none;
+}
+
+/******************************
+BUTTON BORDER ORANGE
+*******************************/
+
+.button-border.orange {
+	background: #fc6e51;
+	border: 2px solid #fc6e51;
+	box-shadow: none;
+}
+
+.button-border.orange:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #fff;
+}
+
+.button-border.orange:hover {
+    opacity: 1;
+    background: #d4482b;
+    box-shadow: none;
+}
+
+/******************************
+BUTTON BORDER YELLOW
+*******************************/
+
+.button-border.yellow {
+	background: #ffce54;
+	border: 2px solid #ffce54;
+	box-shadow: none;
+}
+
+.button-border.yellow:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #fff;
+}
+
+.button-border.yellow:hover {
+    opacity: 1;
+    background: #fbc234;
+    box-shadow: none;
+}
+
+/******************************
+BUTTON BORDER MINT
+*******************************/
+
+.button-border.mint {
+	background: #48cfad;
+	border: 2px solid #48cfad;
+	box-shadow: none;
+}
+
+.button-border.mint:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #fff;
+}
+
+.button-border.mint:hover {
+    opacity: 1;
+    background: #2cd2a8;
+    box-shadow: none;
+}
+
+/******************************
+BUTTON BORDER BLUE
+*******************************/
+
+.button-border.blue {
+	background: #29b5e6;
+	border: 2px solid #29b5e6;
+	box-shadow: none;
+}
+
+.button-border.blue:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #fff;
+}
+
+.button-border.blue:hover {
+    opacity: 1;
+    background: #29b5e6;
+    box-shadow: none;
+}
+
+/******************************
+BUTTON BORDER RED
+*******************************/
+
+.button-border.green {
+	background: #ea434b;
+	border: 2px solid #ea434b;
+	box-shadow: none;
+}
+
+.button-border.green:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #fff;
+}
+
+.button-border.green:hover {
+    opacity: 1;
+    background: #ea2831;
+    box-shadow: none;
+}
+
 
 /******************************
 RATING
@@ -426,7 +593,7 @@ PROGRESS BAR
   line-height: 20px;
   color: #fff;
   text-align: center;
-  background-color: #428bca; 
+  background-color: #428bca;
   -webkit-transition: width 1.5s ease-in-out;
   transition: width 1.5s ease-in-out;
 }
@@ -489,7 +656,7 @@ SEARCH BOX
 	font-weight: 100;
 	width:400px;
 	border: 0;
-	
+
 	border-radius: 4px;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
@@ -519,7 +686,7 @@ SEARCH BOX
 	width:80px;
 	border: 0;
 	cursor:pointer;
-	
+
 	border-radius: 4px;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
@@ -546,7 +713,7 @@ FORM
 	font-weight: 100;
 	width:400px;
 	border: 0;
-	
+
 	border-radius: 4px;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
@@ -593,7 +760,7 @@ FORM
 
 #login-area ul #signup,
 #login-area ul #forgot {
-	float: left;	
+	float: left;
 	margin-top: 10px;
 }
 
@@ -628,7 +795,7 @@ FORM
 	padding: 15px 10px;
 }
 
-#form input[type=password] {	
+#form input[type=password] {
 	-webkit-border-radius: 0 0 4px 4px;
 	-moz-border-radius: 0 0 4px 4px;
 	-o-border-radius: 0 0 4px 4px;
@@ -670,7 +837,7 @@ form #submit:hover:active{
 	box-shadow: 0 0 0 #343434;
 }
 
-/*#form input:focus:invalid {	
+/*#form input:focus:invalid {
 	-moz-box-shadow: 0 0 2px #f44444;
 	-webkit-box-shadow: 0 0 2px #f44444;
 	box-shadow: 0 0 2px #f44444;

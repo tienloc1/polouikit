@@ -9,7 +9,10 @@ Not resell anywhere.
 #### Where do I get the source code?
 Check the GitHub repo here: https://github.com/tienloc1/polouikit
 
-#### I want to contribute 
+#### Where do I get the source code?
+Check the Github Pages here: http://tienloc1.github.io/polouikit/
+
+#### I want to contribute
 Contact me on [Twitter](@Loc_rabbirt)
 
 #### Thanks to
