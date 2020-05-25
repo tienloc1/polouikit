@@ -251,7 +251,7 @@ BUTTON BORDER GREEN
 
 .button-border.green:hover {
     opacity: 1;
-    background: #6d9640;
+    background: #81c338;
     box-shadow: none;
 }
 
@@ -363,13 +363,13 @@ BUTTON BORDER BLUE
 BUTTON BORDER RED
 *******************************/
 
-.button-border.green {
+.button-border.red {
 	background: #ea434b;
 	border: 2px solid #ea434b;
 	box-shadow: none;
 }
 
-.button-border.green:before {
+.button-border.red:before {
     content: '';
     position: absolute;
     top: 0;
@@ -379,7 +379,7 @@ BUTTON BORDER RED
     border: 1px solid #fff;
 }
 
-.button-border.green:hover {
+.button-border.red:hover {
     opacity: 1;
     background: #ea2831;
     box-shadow: none;
